@@ -1,0 +1,25 @@
+<%
+var avatar_img = page.avatar || theme.about.avatar
+%>
+
+<div class="post-title">
+    <h1><%= page.title %></h1>
+</div>
+<div class="post-header">
+    <div class="post-avatar">
+        <img src="<%= url_for(avatar_img) %>" alt="avatar">
+    </div>
+    <div class="post-in-meta">
+        <div>
+            <span>作者</span>
+            <span><%= page.author %></span>
+        </div>
+        <div>
+            <span>时间</span>
+            <time datetime="<%= full_date(page.date, 'YYYY-MM-DD HH:mm') %>" pubdate>
+                <%= full_date(page.date, theme.post.meta.date.format) %>
+            </time>
+        </div>
+    </div>
+</div>
+<hr/>
