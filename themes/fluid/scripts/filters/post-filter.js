@@ -1,5 +1,3 @@
-/* global hexo */
-
 'use strict';
 
 // 生成前过滤文章

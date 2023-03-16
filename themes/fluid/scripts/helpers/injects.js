@@ -1,5 +1,3 @@
-/* global hexo */
-
 'use strict';
 
 hexo.extend.helper.register('point_injected', function(type) {

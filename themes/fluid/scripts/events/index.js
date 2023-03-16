@@ -1,5 +1,3 @@
-/* global hexo */
-
 'use strict';
 
 hexo.on('generateBefore', () => {
@@ -9,8 +7,4 @@ hexo.on('generateBefore', () => {
   require('./lib/highlight')(hexo);
   require('./lib/lazyload')(hexo);
   require('./lib/footnote')(hexo);
-});
-
-hexo.on('generateAfter', () => {
-  require('./lib/hello')(hexo);
 });

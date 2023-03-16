@@ -1,5 +1,3 @@
-/* global hexo */
-
 'use strict';
 
 hexo.extend.generator.register('_hexo_generator_search', function(locals) {

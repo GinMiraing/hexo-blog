@@ -1,5 +1,3 @@
-/* global CONFIG */
-
 (function() {
   // Modified from [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
   function localSearchFunc(path, searchSelector, resultSelector) {

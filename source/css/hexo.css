@@ -6,14 +6,6 @@
     }
 }
 
-.navbar {
-    background-color: var(--navbar-bg-color) !important;;
-}
-
-.navbar-brand:hover {
-    color: var(--link-hover-color) !important;
-}
-
 /* 搜索框 */
 .modal-dialog .modal-content {
     border-radius: 0.5rem !important;

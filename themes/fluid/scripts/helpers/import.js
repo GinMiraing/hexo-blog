@@ -1,5 +1,3 @@
-/* global hexo */
-
 'use strict';
 
 hexo.extend.helper.register('import_js', function(base, relative, ex = '') {

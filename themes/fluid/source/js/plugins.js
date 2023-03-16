@@ -1,5 +1,3 @@
-/* global Fluid, CONFIG */
-
 HTMLElement.prototype.wrap = function(wrapper) {
   this.parentNode.insertBefore(wrapper, this);
   this.parentNode.removeChild(this);
@@ -7,28 +5,6 @@ HTMLElement.prototype.wrap = function(wrapper) {
 };
 
 Fluid.plugins = {
-
-  typing: function(text) {
-    if (!('Typed' in window)) { return; }
-
-    var typed = new window.Typed('#subtitle', {
-      strings: [
-        '  ',
-        text + '&nbsp;'
-      ],
-      cursorChar: CONFIG.typing.cursorChar,
-      typeSpeed : CONFIG.typing.typeSpeed,
-      loop      : CONFIG.typing.loop
-    });
-    typed.stop();
-    var subtitle = document.getElementById('subtitle');
-    if (subtitle) {
-      subtitle.innerText = '';
-    }
-    jQuery(document).ready(function() {
-      typed.start();
-    });
-  },
 
   fancyBox: function(selector) {
     if (!CONFIG.image_zoom.enable || !('fancybox' in jQuery)) { return; }
