@@ -17,4 +17,5 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
   injects.pageComments.file('default', path.join(hexo.theme_dir, 'layout/_partials/comments.ejs'));
   injects.linksComments.file('default', path.join(hexo.theme_dir, 'layout/_partials/comments.ejs'));
+  injects.aboutComments.file('default', path.join(hexo.theme_dir, 'layout/_partials/comments.ejs'));
 }, -99);

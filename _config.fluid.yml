@@ -11,8 +11,6 @@ code:
       style_dark: "Lioshi"
 
 fun_features:
-  typing:
-    enable: false
   anchorjs:
     placement: right
     visible: always
@@ -89,15 +87,11 @@ lazyload:
 iconfont: https://at.alicdn.com/t/c/font_3048099_x6fravc6uo.css
 
 navbar:
-  blog_title: "胤的博客"
   menu:
     - { key: "归档", link: "/archives/", icon: "iconfont icon-mianxing-shuben" }
     - { key: "说说", link: "/daily/", icon: "iconfont icon-love" }
     - { key: "友链", link: "/links/", icon: "iconfont icon-link_fill" }
     - { key: "关于", link: "/about/", icon: "iconfont icon-user" }
-
-open_graph:
-  enable: false
 
 footer:
   content: '
@@ -110,11 +104,6 @@ footer:
     icp_text: 闽ICP备2021019269号
 
 index:
-  banner_img: img/background.jpg
-  banner_img_height: 50
-  slogan:
-    enable: true
-    text: "所念皆星河"
   auto_excerpt:
     enable: false
   post_meta:
@@ -126,8 +115,6 @@ index:
     icon: "iconfont icon-iconfonticonfonti2copy"
 
 post:
-  banner_img: img/background.jpg
-  banner_img_height: 50
   meta:
     author:
       enable: true
@@ -135,10 +122,6 @@ post:
       enable: false
     min2read:
       enable: false
-  category_bar:
-    enable: false
-  toc:
-    enable: false
   copyright:
     enable: true
     license: 'BY-NC'
@@ -153,22 +136,9 @@ twikoo:
   envId: https://twikoo.zengjunyin.com
   path: window.location.pathname
 
-archive:
-  banner_img: img/background.jpg
-  banner_img_height: 50
-
-category:
-  banner_img: img/background.jpg
-  banner_img_height: 50
-
-tag:
-  enable: false
-
 about:
   title: "关于"
   subtitle: "可有可无的自白墙"
-  banner_img: https://cdn.zengjunyin.com/image/basic/avatar.png
-  banner_img_height: 50
   avatar: https://cdn.zengjunyin.com/image/basic/avatar.png
   name: "胤"
   intro: "所念皆星河"
@@ -177,18 +147,9 @@ about:
     - { class: "iconfont icon-github-fill", link: "https://github.com/GinMiraing", tip: "GitHub" }
     - { class: "iconfont icon-mail_fill", link: "mailto:zengjunyin@foxmail.com", tip: "Mail" }
 
-page:
-  banner_img: img/background.jpg
-  banner_img_height: 50
-
-page404:
-  enable: false
-
 links:
   title: "友情链接"
   subtitle: "一些可爱的朋友们"
-  banner_img: img/background.jpg
-  banner_img_height: 50
   items:
     - {
       title: "山川行貉",
