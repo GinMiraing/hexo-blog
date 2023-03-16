@@ -36,6 +36,7 @@ comment: true
         padding: 1.2em;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.06),0 1px 5px 0 rgba(0,0,0,.12);
         border-radius: 0.5em;
+        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     }
     .tk-comment {
         margin-bottom: 2.5rem;
@@ -44,6 +45,7 @@ comment: true
         padding: 1.2em;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.06),0 1px 5px 0 rgba(0,0,0,.12);
         border-radius: 0.5em;
+        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     }
     .tk-replies > .tk-comment {
         margin-bottom: 0;
