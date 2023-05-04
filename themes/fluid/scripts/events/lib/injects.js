@@ -60,10 +60,7 @@ const points = {
     'postMarkdownBegin',
     'postMarkdownEnd',
     'postCopyright',
-    'postComments',
     'pageComments',
-    'linksComments',
-    'aboutComments',
   ],
   styles: [
     'variable',

@@ -6,7 +6,6 @@ page.subtitle = page.subtitle || page.title || __(`${ layout }.subtitle`)
 
 <article class="page-content">
   <%- page.content %>
-  <%- inject_point('pageComments') %>
 </article>
 
 <% import_css(theme.static_prefix.github_markdown, 'github-markdown.min.css') %>

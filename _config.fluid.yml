@@ -22,11 +22,11 @@ dark_mode:
   default: auto
 
 color:
-  body_bg_color: "#f2f2f2"
-  body_bg_color_dark: "#232323"
+  body_bg_color: "#f7f8fa"
+  body_bg_color_dark: "#151718"
 
   navbar_bg_color: "#fff"
-  navbar_bg_color_dark: "#464646"
+  navbar_bg_color_dark: "#232222"
 
   navbar_text_color: "#373e4a"
   navbar_text_color_dark: "#d8d8d8"
@@ -41,7 +41,7 @@ color:
   sec_text_color_dark: "#979898"
 
   board_color: "#fff"
-  board_color_dark: "#464646"
+  board_color_dark: "#232222"
 
   post_text_color: "#373e4a"
   post_text_color_dark: "#d8d8d8"
@@ -91,7 +91,6 @@ navbar:
     - { key: "归档", link: "/archives/", icon: "iconfont icon-mianxing-shuben" }
     - { key: "说说", link: "/daily/", icon: "iconfont icon-love" }
     - { key: "友链", link: "/links/", icon: "iconfont icon-link_fill" }
-    - { key: "关于", link: "/about/", icon: "iconfont icon-user" }
 
 footer:
   content: '
@@ -188,9 +187,6 @@ links:
       avatar: "https://thirdqq.qlogo.cn/g?b=sdk&k=BprL2nDXwddtThAKbAFBtw&kti=Y3tljAAAAAE&s=140&t=1644206293"
     }
   onerror_avatar: https://cdn.zengjunyin.com/image/blog/linkavatar.png
-  comments:
-    enable: ture
-    type: twikoo
 
 static_prefix:
   twikoo: https://lib.baomitu.com/twikoo/1.6.10/

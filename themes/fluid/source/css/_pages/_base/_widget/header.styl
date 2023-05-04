@@ -4,6 +4,7 @@
   box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
   -webkit-box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
   transition color .2s ease-in-out, background-color .2s ease-in-out
+  padding 10px
 
   .navbar-brand
     color var(--navbar-text-color)
@@ -94,11 +95,16 @@
 @media (max-width: 767px)
   .navbar
     font-size 1rem
-    line-height 2.5rem
 
 @media (max-width: 575px)
   .header-inner
-    height 60px !important
+    height 77.5px !important
 
 .header-inner
   height 100px
+
+.nav-link
+  padding 0.75rem
+
+  @media (min-width: 992px)
+    padding 0.5rem

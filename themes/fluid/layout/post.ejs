@@ -1,68 +1,57 @@
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="col-lg-12 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <%- inject_point('postMetaTop') %>
-            <% if(theme.post.updated && theme.post.updated.enable) { %>
-              <p class="note note-<%= theme.post.updated.note_class || 'info' %>">
-                <% if (theme.post.updated.relative) { %>
-                  <% if (theme.post.updated.content) { %>
-                    <%- theme.post.updated.content %><%- relative_date(page.updated, theme.post.updated.date_format) %>
-                  <% } else { %>
-                    <%- __('post.updated', relative_date(page.updated, theme.post.updated.date_format)) %>
-                  <% } %>
-                <% } else { %>
-                  <% if (theme.post.updated.content) { %>
-                    <%- theme.post.updated.content %><%- date(page.updated, theme.post.updated.date_format) %>
-                  <% } else { %>
-                    <%- __('post.updated', date(page.updated, theme.post.updated.date_format)) %>
-                  <% } %>
-                <% } %>
-              </p>
-            <% } %>
-            <div class="markdown-body">
-              <%- inject_point('postMarkdownBegin') %>
-              <%- page.content %>
-              <%- inject_point('postMarkdownEnd') %>
-            </div>
-            <hr/>
-            <div>
-              <%- inject_point('postMetaBottom') %>
-              <%- inject_point('postCopyright') %>
-              <% if(theme.post.prev_next.enable && !page.hide) { %>
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    <% const prev = prev_post(page) %>
-                    <% if (prev) { %>
-                      <a href="<%= url_for(prev.path) %>" title="<%= prev.title %>">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"><%= prev.title %></span>
-                        <span class="visible-mobile"><%- __('post.prev_post') %></span>
-                      </a>
-                    <% } %>
-                  </article>
-                  <article class="post-next col-6">
-                    <% const next = next_post(page) %>
-                    <% if (next) { %>
-                      <a href="<%= url_for(next.path) %>" title="<%= next.title %>">
-                        <span class="hidden-mobile"><%= next.title %></span>
-                        <span class="visible-mobile"><%- __('post.next_post') %></span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    <% } %>
-                  </article>
-                </div>
-              <% } %>
-            </div>
-            <%- inject_point('postComments') %>
-          </article>
-        </div>
-      </div>
-    </div>
+<article class="post-content mx-auto">
+  <%- inject_point('postMetaTop') %>
+  <% if(theme.post.updated && theme.post.updated.enable) { %>
+    <p class="note note-<%= theme.post.updated.note_class || 'info' %>">
+      <% if (theme.post.updated.relative) { %>
+        <% if (theme.post.updated.content) { %>
+          <%- theme.post.updated.content %><%- relative_date(page.updated, theme.post.updated.date_format) %>
+        <% } else { %>
+          <%- __('post.updated', relative_date(page.updated, theme.post.updated.date_format)) %>
+        <% } %>
+      <% } else { %>
+        <% if (theme.post.updated.content) { %>
+          <%- theme.post.updated.content %><%- date(page.updated, theme.post.updated.date_format) %>
+        <% } else { %>
+          <%- __('post.updated', date(page.updated, theme.post.updated.date_format)) %>
+        <% } %>
+      <% } %>
+    </p>
+  <% } %>
+  <div class="markdown-body">
+    <%- inject_point('postMarkdownBegin') %>
+    <%- page.content %>
+    <%- inject_point('postMarkdownEnd') %>
   </div>
-</div>
+  <hr/>
+  <div>
+    <%- inject_point('postMetaBottom') %>
+    <%- inject_point('postCopyright') %>
+    <% if(theme.post.prev_next.enable && !page.hide) { %>
+      <div class="post-prevnext my-3">
+        <article class="post-prev col-6">
+          <% const prev = prev_post(page) %>
+          <% if (prev) { %>
+            <a href="<%= url_for(prev.path) %>" title="<%= prev.title %>">
+              <i class="iconfont icon-arrowleft"></i>
+              <span class="hidden-mobile"><%= prev.title %></span>
+                <span class="visible-mobile"><%- __('post.prev_post') %></span>
+            </a>
+          <% } %>
+        </article>
+        <article class="post-next col-6">
+          <% const next = next_post(page) %>
+          <% if (next) { %>
+            <a href="<%= url_for(next.path) %>" title="<%= next.title %>">
+              <span class="hidden-mobile"><%= next.title %></span>
+              <span class="visible-mobile"><%- __('post.next_post') %></span>
+              <i class="iconfont icon-arrowright"></i>
+            </a>
+          <% } %>
+        </article>
+      </div>
+    <% } %>
+  </div>
+</article>
 
 <% import_css(theme.static_prefix.github_markdown, 'github-markdown.min.css') %>
 <% import_css(theme.static_prefix.hint, 'hint.min.css') %>

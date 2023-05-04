@@ -10,27 +10,35 @@ comment: true
         background-color: transparent !important;
         box-shadow: none !important;
         padding: 0;
+        margin: 0 !important;
     }
-    @media (max-width: 575px) {
-        #board {
-            padding: 3rem 0;
-        }
+
+    .commentsboard {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 0;
+        margin: 0 !important;
     }
 
     #comments {
-        margin-top: 0 !important;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin: 0 4rem 2rem 4rem;
     }
-    .col-12 {
-        padding: 0 !important;
+
+    @media (max-width: 768px) {
+        #comments {
+            margin: 0 1rem 2rem 1rem;
+        }
     }
-    .col-md-10 {
-        padding: 0 !important;
+
+    @media (max-width: 575px) {
+        #comments {
+            margin: 0 0 15px 0;
+        }
     }
+
     .tk-submit:nth-of-type(1) {
         display: none;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
         margin-top: 0;
         background-color: var(--board-bg-color);
         padding: 1.2em;
@@ -38,8 +46,9 @@ comment: true
         border-radius: 0.5em;
         transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     }
+
     .tk-comment {
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
         margin-top: 0;
         background-color: var(--board-bg-color);
         padding: 1.2em;
@@ -64,5 +73,13 @@ comment: true
         border-radius: 0.5em;
         width: 25%;
         margin: 0 auto;
+    }
+    @media (max-width: 575px) {
+        .tk-submit:nth-of-type(1) {
+            margin-bottom: 15px;
+        }
+        .tk-comment {
+            margin-bottom: 15px;
+        }
     }
 </style>
