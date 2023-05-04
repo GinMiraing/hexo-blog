@@ -1,16 +1,22 @@
 @import "_widget/*"
 
 html
-  font-size $font-size
-  letter-spacing $letter-spacing
+  font-size 17px
+  letter-spacing 0.06em
+
+  @media (max-width: 767px)
+    font-size 16px
+
+  @media (max-width: 575px)
+    font-size 15px
 
 html, body
   height 100%
-  font-family $font-family
+  font-family Noto Serif SC, sans-serif
   overflow-wrap break-word
 
 body
-  transition color .2s ease-in-out, background-color .2s ease-in-out
+  transition var(--item-transition)
   background-color var(--body-bg-color)
   color var(--text-color)
   -webkit-font-smoothing antialiased
@@ -20,12 +26,11 @@ body
     color var(--text-color)
     text-decoration none
     cursor pointer
-    transition color .2s ease-in-out, background-color .2s ease-in-out
+    transition var(--item-transition)
 
     &:hover
       color var(--link-hover-color)
       text-decoration none
-      transition color .2s ease-in-out, background-color .2s ease-in-out
 
 code
   color inherit

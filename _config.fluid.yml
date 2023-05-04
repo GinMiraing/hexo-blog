@@ -74,7 +74,7 @@ color:
   button_hover_bg_color_dark: "#46647e"
 
 font:
-  font_size: 17px
+  font_size: 15px
   font_family: Noto Serif SC, sans-serif;
   letter_spacing: 0.06em
 

@@ -1,16 +1,21 @@
 #board
   position relative
-  padding 50px
+  padding 3rem
   background-color var(--board-bg-color)
-  transition background-color .2s ease-in-out
-  border-radius 0.5rem
+  transition background-color 0.2s ease-in-out
+  border-radius 8px
   z-index 3
-  -webkit-box-shadow 0 2px 2px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.06),0 1px 5px 0 rgba(0,0,0,.12)
-  box-shadow 0 2px 2px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.06),0 1px 5px 0 rgba(0,0,0,.12)
+  -webkit-box-shadow var(--card-shadow)
+  box-shadow var(--card-shadow)
+
+  @media (max-width: 991px)
+    padding 2.5rem
+
   @media (max-width: 767px)
-    padding 35px
-  @media (max-width: 424px)
-    padding 20px
+    padding 2rem
+
+  @media (max-width: 575px)
+    padding 1.5rem
 
 #card-content
   position relative
@@ -21,14 +26,34 @@
   position relative
   margin 0 4rem 2rem 4rem
   background-color var(--board-bg-color)
-  transition background-color .2s ease-in-out
-  border-radius 0.5rem
-  z-index 3
-  -webkit-box-shadow 0 2px 2px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.06),0 1px 5px 0 rgba(0,0,0,.12)
-  box-shadow 0 2px 2px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.06),0 1px 5px 0 rgba(0,0,0,.12)
+  transition background-color 0.2s ease-in-out
+  border-radius 8px
+  z-index 5
+  -webkit-box-shadow var(--card-shadow)
+  box-shadow var(--card-shadow)
 
-  @media (max-width: 768px)
+  @media (max-width: 767px)
     margin 0 1rem 2rem 1rem
 
   @media (max-width: 575px)
-    margin 0 0 15px 0
+    margin 0 0 1rem 0
+
+.commentsboard
+  position relative
+  margin-top 15px
+  padding 3rem
+  background-color var(--board-bg-color)
+  transition background-color 0.2s ease-in-out
+  border-radius 8px
+  z-index 4
+  -webkit-box-shadow var(--card-shadow)
+  box-shadow var(--card-shadow)
+
+  @media (max-width: 991px)
+    padding 2.5rem
+
+  @media (max-width: 767px)
+    padding 2rem
+
+  @media (max-width: 575px)
+    padding 1.5rem

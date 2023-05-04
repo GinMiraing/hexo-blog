@@ -6,42 +6,14 @@
     }
 }
 
-/* 搜索框 */
-.modal-dialog .modal-content {
-    border-radius: 0.5rem !important;
-}
-
-.modal-body::-webkit-scrollbar {
-    display: none;
-}
-
-#local-search-result .search-list-content {
-    text-align: justify;
-    text-align-last: left;
-}
-
-.modal-header {
-    border-bottom: none !important;
-}
-
-.modal-title {
-    text-align: left;
-    margin-left: 1rem;
-}
-
 /* 段落 */
 .markdown-body a:hover {
     text-decoration: none !important;
 }
 
-.markdown-body {
-    line-height: 2 !important;
-}
-
 .markdown-body p {
     text-align: justify;
     text-align-last: left;
-    margin-bottom: 25px !important;
 }
 
 .image-caption {
@@ -56,13 +28,7 @@
 }
 
 /* 脚注 */
-.footnote-list ol li:before {
-    font-family: inherit !important;
-    color: var(--post-link-color);
-}
-
 .footnote-list ol {
-    padding: 0 !important;
     text-align: justify;
     text-align-last: left;
 }
@@ -182,27 +148,4 @@
 
 .tk-content img:not(.tk-owo-emotion) {
     max-width: 100% !important;
-}
-
-/* iziToast */
-.iziToast {
-    font-family: inherit !important;
-    transition: background-color 0.2s ease-in-out;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.iziToast-body {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.iziToast-texts {
-    padding: 10px 15px !important;
-}
-
-.iziToast-message {
-    font-size: 16px !important;
-    line-height: 1.5em !important;
-    text-align: justify !important;
 }
