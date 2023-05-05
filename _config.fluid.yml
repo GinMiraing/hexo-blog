@@ -126,7 +126,7 @@ post:
     license: 'BY-NC'
   image_zoom:
     enable: true
-    img_url_replace: ['/post', '']
+    img_url_replace: ['re:(@).*$', '']
   comments:
     enable: true
     type: twikoo
