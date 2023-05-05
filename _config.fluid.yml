@@ -1,8 +1,8 @@
 tab_title_separator: " - "
 
-favicon: https://cdn.zengjunyin.com/image/basic/favicon.ico
+favicon: https://cdn.zengjunyin.com/favicon.ico
 
-apple_touch_icon: https://cdn.zengjunyin.com/image/basic/apple-touch-icon.png
+apple_touch_icon: https://cdn.zengjunyin.com/avatar.png
 
 code:
   highlight:
@@ -81,7 +81,7 @@ font:
 custom_css: css/hexo.css
 
 lazyload:
-  loading_img: https://cdn.zengjunyin.com/image/blog/loading.gif
+  loading_img: https://article.biliimg.com/bfs/article/295f64a4feeb3617e673a29a6e5438efed7e44e1.gif@800w_400h_1c.webp
   onlypost: true
 
 iconfont: https://at.alicdn.com/t/c/font_3048099_x6fravc6uo.css
@@ -94,8 +94,8 @@ navbar:
 
 footer:
   content: '
-    <a target="_blank" href="https://hexo.io" title="框架 Hexo"><img src="https://cdn.zengjunyin.com/image/blog/label-1.svg"></a>
-    <a target="_blank" href="https://hexo.fluid-dev.com/docs/" title="主题 Fluid"><img src="https://cdn.zengjunyin.com/image/blog/label-2.svg"></a>
+    <a target="_blank" href="https://hexo.io" title="框架 Hexo"><img src="https://cdn.zengjunyin.com/label-1.svg"></a>
+    <a target="_blank" href="https://hexo.fluid-dev.com/docs/" title="主题 Fluid"><img src="https://cdn.zengjunyin.com/label-2.svg"></a>
   '
 
   beian:
@@ -138,7 +138,7 @@ twikoo:
 about:
   title: "关于"
   subtitle: "可有可无的自白墙"
-  avatar: https://cdn.zengjunyin.com/image/basic/avatar.png
+  avatar: https://cdn.zengjunyin.com/avatar.png
   name: "胤"
   intro: "所念皆星河"
   icons:
@@ -186,7 +186,7 @@ links:
       link: "https://www.xiaozonglin.cn",
       avatar: "https://thirdqq.qlogo.cn/g?b=sdk&k=BprL2nDXwddtThAKbAFBtw&kti=Y3tljAAAAAE&s=140&t=1644206293"
     }
-  onerror_avatar: https://cdn.zengjunyin.com/image/blog/linkavatar.png
+  onerror_avatar: https://article.biliimg.com/bfs/article/fe739a158cc128f70f780eb5fa96f388b81d478f.png@.webp
 
 static_prefix:
   twikoo: https://lib.baomitu.com/twikoo/1.6.10/
