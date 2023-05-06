@@ -3,26 +3,18 @@
   &:not(:last-child)
     margin-bottom 1rem
 
-  .category-sub
-    pass
-
-  .category-item, .category-subitem
+  .category-item
+    font-size 1.25rem
     font-weight bold
     display flex
     align-items center
-
-  .category-item
-    font-size 1.25rem
-
-  .category-subitem
-    font-size 1.1rem
 
   .category-collapse
     padding-left: 1.25rem
     width 100%
 
   .category-count
-    font-size .9rem
+    font-size 0.9rem
     font-weight initial
     min-width 1.3em
     line-height 1.3em
@@ -30,7 +22,7 @@
     align-items center
 
     i
-      padding-right  .25rem
+      padding-right 0.25rem
 
     span
       width 2rem
@@ -47,15 +39,9 @@
       transform-origin center center
 
     i
-      transition transform .3s ease-out
+      transition transform 0.3s ease-out
       display inline-block
-      margin-left .25rem
-
-    .category:hover
-      z-index 1
-      color var(--link-hover-color)
-      text-decoration none
-      background-color var(--link-hover-bg-color)
+      margin-left 0.25rem
 
   .row
     margin-left 0

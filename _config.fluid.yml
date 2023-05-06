@@ -84,13 +84,14 @@ lazyload:
   loading_img: https://article.biliimg.com/bfs/article/295f64a4feeb3617e673a29a6e5438efed7e44e1.gif@800w_400h_1c.webp
   onlypost: true
 
-iconfont: https://at.alicdn.com/t/c/font_3048099_x6fravc6uo.css
+iconfont: //at.alicdn.com/t/c/font_3048099_c8qyj3uwdpd.css
 
 navbar:
   menu:
-    - { key: "归档", link: "/archives/", icon: "iconfont icon-mianxing-shuben" }
+    - { key: "归档", link: "/archives/", icon: "iconfont icon-archive" }
+    - { key: "分类", link: "/categories/", icon: "iconfont icon-category" }
     - { key: "说说", link: "/daily/", icon: "iconfont icon-love" }
-    - { key: "友链", link: "/links/", icon: "iconfont icon-link_fill" }
+    - { key: "友链", link: "/links/", icon: "iconfont icon-link" }
 
 footer:
   content: '

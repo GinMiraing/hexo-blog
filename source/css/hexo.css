@@ -7,10 +7,6 @@
 }
 
 /* 段落 */
-.markdown-body a:hover {
-    text-decoration: none !important;
-}
-
 .markdown-body p {
     text-align: justify;
     text-align-last: left;

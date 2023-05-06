@@ -1,25 +1,12 @@
 <% if (page.total > 1){ %>
-  <% if (is_home()){ %>
-    <nav aria-label="navigation">
-      <span class="homepagination" id="pagination">
-        <%- paginator({
-          prev_text: '<i class="iconfont icon-arrowleft"></i>',
-          next_text: '<i class="iconfont icon-arrowright"></i>',
-          mid_size: 2,
-          escape: false
-        }) %>
-      </span>
-    </nav>
-  <% } else { %>
-    <nav aria-label="navigation">
-      <span class="pagination" id="pagination">
-        <%- paginator({
-          prev_text: '<i class="iconfont icon-arrowleft"></i>',
-          next_text: '<i class="iconfont icon-arrowright"></i>',
-          mid_size: 2,
-          escape: false
-        }) %>
-      </span>
-    </nav>
-  <% } %>
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <%- paginator({
+        prev_text: '<i class="iconfont icon-arrowleft"></i>',
+        next_text: '<i class="iconfont icon-arrowright"></i>',
+        mid_size: 2,
+        escape: false
+      }) %>
+    </span>
+  </nav>
 <% } %>

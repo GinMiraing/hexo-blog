@@ -16,7 +16,7 @@ html, body
   overflow-wrap break-word
 
 body
-  transition var(--item-transition)
+  transition color 0.2s ease-in-out, background-color 0.2s ease-in-out
   background-color var(--body-bg-color)
   color var(--text-color)
   -webkit-font-smoothing antialiased
@@ -26,14 +26,11 @@ body
     color var(--text-color)
     text-decoration none
     cursor pointer
-    transition var(--item-transition)
+    transition color 0.2s ease-in-out, background-color 0.2s ease-in-out
 
     &:hover
       color var(--link-hover-color)
       text-decoration none
-
-code
-  color inherit
 
 table
   font-size inherit

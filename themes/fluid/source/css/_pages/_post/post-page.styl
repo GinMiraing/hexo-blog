@@ -33,7 +33,7 @@
 .post-metas
   display flex
   flex-wrap wrap
-  font-size .9rem
+  font-size 0.9rem
 
 .post-meta
 
@@ -96,12 +96,6 @@
   .post-next
     justify-content flex-end
 
-  .fa-chevron-left
-    margin-right 0.5rem
-
-  .fa-chevron-right
-    margin-left 0.5rem
-
 @keyframes post-prev-anim
   0%
     -webkit-transform translateX(0)
@@ -128,18 +122,3 @@
   noscript
     display block
     text-align center
-
-.visitors
-  font-size 0.8em
-  padding 0.45rem
-  float right
-
-a.fancybox:hover
-  text-decoration none
-
-// Rewrite hint
-.footnote-ref [class*=hint--][aria-label]:after
-  max-width 12rem
-  white-space nowrap
-  overflow hidden
-  text-overflow ellipsis

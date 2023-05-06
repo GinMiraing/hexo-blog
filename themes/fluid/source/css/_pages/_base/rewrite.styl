@@ -13,51 +13,8 @@ label
   padding-right 1rem
   padding-left 1rem
 
-// Rewrite mdb.css
-.list-group-item
-  display flex
-  background-color transparent
-  border 0
-
-  time
-    flex 0 0 5rem
-
-  .list-group-item-title
-    white-space nowrap
-    overflow hidden
-    text-overflow ellipsis
-
-@media (max-width: 575px)
-  .list-group-item
-    font-size .95rem
-    padding 0.5rem 0.75rem
-
-    time
-      flex 0 0 4rem
-
 .page-link
   font-size 1.1rem
-
-// Rewrite pagination
-.pagination
-  margin-top 3rem
-  justify-content center
-
-  .space
-    align-self flex-end
-
-  a, .current
-    outline 0
-    border 0
-    background-color transparent
-    font-size .9rem
-    padding .5rem .75rem
-    line-height 1.25
-    border-radius .125rem
-    transition background-color .2s ease-in-out
-
-  a:hover, .current
-    background-color var(--link-hover-bg-color)
 
 // Rewrite anchorjs
 .anchorjs-link
@@ -70,24 +27,27 @@ label
 
 // Rewrite iconfont
 i.iconfont
-  font-size 1em
+  font-size 1rem
   line-height 1
 
+// Rewrite fancybox
+a.fancybox:hover
+  text-decoration none
+
 // Rewrite list-group
+.list-group-item
+  display flex
+  background-color transparent
+  border 0
+
+@media (max-width: 575px)
+  .list-group-item
+    font-size 0.95rem
+    padding 0.5rem 0.75rem
+
 .list-group-item-action
   color var(--text-color)
 
   &:focus, &:hover
     color var(--link-hover-color)
     background-color var(--link-hover-bg-color)
-
-// Rewrite fancybox
-a.fancybox:hover
-  text-decoration none
-
-// Rewrite hint
-.footnote-ref [class*=hint--][aria-label]:after
-  max-width 12rem
-  white-space nowrap
-  overflow hidden
-  text-overflow ellipsis

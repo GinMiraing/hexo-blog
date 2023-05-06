@@ -27,7 +27,7 @@
           </a>
           <div class="index-btm post-metas">
             <% if(theme.index.post_meta.date ) { %>
-              <div class="post-meta mr-3">
+              <div class="post-meta mr-3 mr-3 d-flex align-items-center">
                 <i class="iconfont icon-date"></i>
                 <time datetime="<%= full_date(post.date, 'YYYY-MM-DD HH:mm') %>" pubdate>
                   <%- date(post.date, config.date_format) %>
@@ -41,7 +41,7 @@
               </div>
             <% } %>
             <% if(theme.index.post_meta.tag && post.tags.length > 0) { %>
-              <div class="post-meta">
+              <div class="post-meta mr-3 d-flex align-items-center">
                 <i class="iconfont icon-tags"></i>
                 <% post.tags.each(function(tag){ %>
                   <a href="<%= url_for(tag.path) %>">#<%- tag.name %></a>

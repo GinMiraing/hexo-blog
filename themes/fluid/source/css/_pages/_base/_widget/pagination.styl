@@ -1,4 +1,3 @@
-// Rewrite pagination
 .pagination
   margin-top 3rem
   justify-content center
@@ -6,41 +5,21 @@
   .space
     align-self flex-end
 
-  .page-number, .current, .extend
-    outline 0
-    border 0
-    background-color transparent
-    font-size .9rem
-    padding .5rem .75rem
-    line-height 1.25
-    border-radius .125rem
-
-  .page-number
-    margin 0 0.25rem
-
-  .page-number:hover, .current
-    transition background-color .2s ease-in-out
-    background-color var(--link-hover-bg-color)
-
-.homepagination
-  margin-top 3rem
-  justify-content center
-
-  .space
-    align-self flex-end
+  .current
+    background-color var(--board-bg-color) !important
 
   .page-number, .current, .extend
     outline 0
     border 0
     background-color transparent
-    font-size .9rem
-    padding .5rem .75rem
+    font-size 0.9rem
+    padding 0.5rem 0.75rem
     line-height 1.25
-    border-radius .125rem
+    border-radius 3px
+    transition background-color 0.2s ease-in-out
 
-  .page-number
+  .page-number, .extend
     margin 0 0.25rem
 
-  .page-number:hover, .current
-    transition background-color .2s ease-in-out
-    background-color var(--board-bg-color)
+    &:hover
+      background-color var(--link-hover-bg-color)
