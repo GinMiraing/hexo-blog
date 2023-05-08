@@ -190,6 +190,4 @@ links:
   onerror_avatar: https://article.biliimg.com/bfs/article/fe739a158cc128f70f780eb5fa96f388b81d478f.png@.webp
 
 static_prefix:
-  twikoo: https://lib.baomitu.com/twikoo/1.6.10/
-
-  izitoast: https://lib.baomitu.com/izitoast/1.4.0/
+  twikoo: https://lib.baomitu.com/twikoo/1.6.16/
