@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('pjax:complete', function() {
   Fluid.boot.registerEvents();
   Fluid.boot.registerPlugins();
-  Fluid.boot.registerThemeButton();
+  // Fluid.boot.registerThemeButton();
   console.log('pjax complete');
 });
 

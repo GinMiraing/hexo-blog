@@ -31,12 +31,16 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
         </div>
       <% } %>
     </div>
-
-    <% if (theme.scroll_top_arrow.enable) { %>
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    <div class="side-button">
+      <a class="side-button-content" id="color-toggle-btn" aria-label="Color Toggle" href="javascript:;" role="button">
+          <i class="iconfont icon-dark" id="color-toggle-icon"></i>
       </a>
-    <% } %>
+      <% if (theme.scroll_top_arrow.enable) { %>
+        <a class="side-button-content" id="scroll-top-button" aria-label="TOP" href="#" role="button">
+          <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+        </a>
+      <% } %>
+    </div>
 
     <% if (theme.custom_html) { %>
       <div class="col-lg-7 mx-auto nopadding-x-md">
