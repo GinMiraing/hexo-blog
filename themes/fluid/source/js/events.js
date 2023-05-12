@@ -10,7 +10,7 @@ Fluid.events = {
     var navbar = jQuery('#navbar');
     if (navbar.length === 0) {
       return;
-    }
+    };
     jQuery('#navbar-toggler-btn').on('click', function() {
       jQuery('.animated-icon').toggleClass('open');
       jQuery('#navbar').toggleClass('navbar-col-show');
@@ -21,57 +21,17 @@ Fluid.events = {
     var topArrow = jQuery('#scroll-top-button');
     if (topArrow.length === 0) {
       return;
-    }
-    var board = jQuery('#board');
-    var cardcontent = jQuery('#card-content');
-    if (board.length === 0 && cardcontent.length === 0) {
-      return;
-    }
-    var posDisplay = false;
-    var scrollDisplay = false;
-    // Position
-    var setTopArrowPos = function() {
-      var boardRight;
-      if (board.length === 0) {
-        boardRight = cardcontent[0].getClientRects()[0].right;
-      } else {
-        boardRight = board[0].getClientRects()[0].right;
-      }
-      var bodyWidth = document.body.offsetWidth;
-      var right = bodyWidth - boardRight;
-      posDisplay = right >= 50;
-      topArrow.css({
-        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px',
-        'right' : right - 64 + 'px'
-      });
     };
-    setTopArrowPos();
-    jQuery(window).resize(setTopArrowPos);
-    // Display
-    var headerHeight;
-    if (board.length === 0) {
-      headerHeight = cardcontent.offset().top;
-    } else {
-      headerHeight = board.offset().top;
-    }
-    Fluid.utils.listenScroll(function() {
-      var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;
-      scrollDisplay = scrollHeight >= headerHeight;
-      topArrow.css({
-        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px'
-      });
-    });
-    // Click
     topArrow.on('click', function() {
       jQuery('body,html').animate({
         scrollTop: 0,
-        easing   : 'swing'
+        easing: 'swing'
       });
     });
   },
 
   registerImageLoadedEvent: function() {
-    if (!('NProgress' in window)) { return; }
+    if (!('NProgress' in window)) { return; };
 
     var bg = document.getElementById('banner');
     if (bg) {
@@ -83,7 +43,7 @@ Fluid.events = {
       };
       img.src = url;
       if (img.complete) { img.onload(); }
-    }
+    };
 
     var notLazyImages = jQuery('main img:not([lazyload])');
     var total = notLazyImages.length;
@@ -94,13 +54,7 @@ Fluid.events = {
         window.NProgress && window.NProgress.inc(0.5 / total);
       };
       if (img.complete) { img.onload(); }
-    }
+    };
   },
 
-  billboard: function() {
-    if (!('console' in window)) {
-      return;
-    }
-    console.log('Powered by Hexo\nTheme Fluid https://git.io/JqpVD\nModified by Yin');
-  }
 };

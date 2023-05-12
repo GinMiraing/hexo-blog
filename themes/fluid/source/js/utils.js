@@ -13,16 +13,6 @@ Fluid.utils = {
     window.removeEventListener('scroll', callback);
   },
 
-  scrollToElement: function(target, offset) {
-    var of = jQuery(target).offset();
-    if (of) {
-      jQuery('html,body').animate({
-        scrollTop: of.top + (offset || 0),
-        easing   : 'swing'
-      });
-    }
-  },
-
   elementVisible: function(element, offsetFactor) {
     offsetFactor = offsetFactor && offsetFactor >= 0 ? offsetFactor : 0;
     var rect = element.getBoundingClientRect();

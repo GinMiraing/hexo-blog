@@ -18,7 +18,6 @@ if (description) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta name="theme-color" content="<%= theme.color.navbar_bg_color %>">
   <meta name="author" content="<%= page.author || config.author %>">
   <meta name="keywords" content="<%= keywords %>">
   <meta name="description" content="<%= description %>">
@@ -31,5 +30,6 @@ if (description) {
   <%- export_config() %>
   <%- js_ex(theme.static_prefix.internal_js, 'utils.js') %>
   <%- js_ex(theme.static_prefix.internal_js, 'color-schema.js') %>
+  <%- js_ex(theme.static_prefix.twikoo, 'twikoo.all.min.js') %>
   <%- inject_point('head') %>
 </head>
