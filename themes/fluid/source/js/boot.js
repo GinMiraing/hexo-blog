@@ -2,7 +2,6 @@ Fluid.boot = {};
 
 Fluid.boot.registerEvents = function() {
   Fluid.events.registerNavbarEvent();
-  Fluid.events.registerScrollTopArrowEvent();
   Fluid.events.registerImageLoadedEvent();
 };
 
@@ -15,23 +14,29 @@ Fluid.boot.registerPlugins = function() {
 };
 
 Fluid.boot.registerThemeButton = function() {
-  var button = document.querySelector('#color-toggle-btn');
-  if (button) {
-    button.addEventListener('click', function() {
+  const theme_button = document.querySelector('#color-toggle-btn');
+  if (theme_button) {
+    theme_button.addEventListener('click', function() {
       applyCustomColorSchemaSettings(toggleCustomColorSchema());
     });
-    var icon = document.querySelector(colorToggleIconSelector);
-    if (icon) {
-      button.addEventListener('mouseenter', function() {
-        var current = icon.getAttribute('data');
-        icon.classList.replace(getIconClass(invertColorSchemaObj[current]), getIconClass(current));
+    const icon_button = document.querySelector('#color-toggle-icon');
+    if (icon_button) {
+      theme_button.addEventListener('mouseenter', function() {
+        var current = icon_button.getAttribute('data');
+        icon_button.classList.replace(getIconClass(invertColorSchemaObj[current]), getIconClass(current));
       });
-      button.addEventListener('mouseleave', function() {
-        var current = icon.getAttribute('data');
-        icon.classList.replace(getIconClass(current), getIconClass(invertColorSchemaObj[current]));
+      theme_button.addEventListener('mouseleave', function() {
+        var current = icon_button.getAttribute('data');
+        icon_button.classList.replace(getIconClass(current), getIconClass(invertColorSchemaObj[current]));
       });
-    }
-  }
+    };
+  };
+  const back2top_button = document.querySelector('#scroll-top-button');
+  if (back2top_button) {
+    back2top_button.addEventListener('click', function() {
+      document.body.scrollTop = 0;
+    });
+  };
 };
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -56,12 +61,9 @@ window.addEventListener('load', function() {
         'meta[name=description]',
         '.container'
     ],
-    history: true,
-    debug: false,
+    scrollTo: true,
     cacheBust: false,
-    timeout: 0,
     analytics: false,
-    currentUrlFullReload: false,
     scrollRestoration: false,
   });
 

@@ -17,19 +17,6 @@ Fluid.events = {
     });
   },
 
-  registerScrollTopArrowEvent: function() {
-    var topArrow = jQuery('#scroll-top-button');
-    if (topArrow.length === 0) {
-      return;
-    };
-    topArrow.on('click', function() {
-      jQuery('body,html').animate({
-        scrollTop: 0,
-        easing: 'swing'
-      });
-    });
-  },
-
   registerImageLoadedEvent: function() {
     if (!('NProgress' in window)) { return; };
 

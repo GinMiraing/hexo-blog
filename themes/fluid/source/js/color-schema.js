@@ -1,7 +1,6 @@
 const rootElement = document.documentElement;
 const colorSchemaStorageKey = 'Fluid_Color_Scheme';
 const userColorSchemaAttributeName = 'data-user-color-scheme';
-const colorToggleIconSelector = '#color-toggle-icon';
 const validColorSchemaKeys = {
   dark: true,
   light: true
@@ -46,7 +45,7 @@ function getIconClass(scheme) {
 function setButtonIcon(schema) {
   if (validColorSchemaKeys[schema]) {
     var icon = getIconClass(schema);
-    var iconElement = document.querySelector(colorToggleIconSelector);
+    var iconElement = document.querySelector('#color-toggle-icon');
     if (iconElement) {
       iconElement.setAttribute(
         'class',
@@ -57,8 +56,8 @@ function setButtonIcon(schema) {
         invertColorSchemaObj[schema]
       );
     } else {
-      Fluid.utils.waitElementLoaded(colorToggleIconSelector, function() {
-        var iconElement = document.querySelector(colorToggleIconSelector);
+      Fluid.utils.waitElementLoaded('#color-toggle-icon', function() {
+        var iconElement = document.querySelector('#color-toggle-icon');
         if (iconElement) {
           iconElement.setAttribute(
             'class',
