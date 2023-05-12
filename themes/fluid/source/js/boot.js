@@ -42,6 +42,7 @@ document.addEventListener('pjax:complete', function() {
   Fluid.boot.registerEvents();
   Fluid.boot.registerPlugins();
   Fluid.boot.registerThemeButton();
+  console.log('pjax complete');
 });
 
 window.addEventListener('load', function() {
@@ -49,7 +50,7 @@ window.addEventListener('load', function() {
   Fluid.boot.registerThemeButton();
 
   const pjax = new Pjax({
-    elements: "a:not([data-fancybox]), a:not([aria-label])",
+    elements: "a:not([data-fancybox]):not([aria-label])",
     selectors: [
         'title',
         'meta[name=description]',
