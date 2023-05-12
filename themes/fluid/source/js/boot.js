@@ -49,11 +49,11 @@ window.addEventListener('load', function() {
   Fluid.boot.registerThemeButton();
 
   const pjax = new Pjax({
-    elements: "a:not([data-fancybox])",
+    elements: "a:not([data-fancybox]), a:not([aria-label])",
     selectors: [
-        'head title',
-        '.container',
-        '.pjax'
+        'title',
+        'meta[name=description]',
+        '.container'
     ],
     history: true,
     debug: false,
