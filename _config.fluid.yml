@@ -81,7 +81,7 @@ font:
 custom_css: css/hexo.css
 
 lazyload:
-  loading_img: https://article.biliimg.com/bfs/article/295f64a4feeb3617e673a29a6e5438efed7e44e1.gif@800w_400h_1c.webp
+  loading_img: https://article.biliimg.com/bfs/article/b7bb2a197ce8caa47bcea068be3794372972d455.gif@800w_400h_1c.webp
   onlypost: true
 
 iconfont: //at.alicdn.com/t/c/font_3048099_c8qyj3uwdpd.css
