@@ -92,6 +92,7 @@ navbar:
     - { key: "分类", link: "/categories/", icon: "iconfont icon-category" }
     - { key: "说说", link: "/daily/", icon: "iconfont icon-love" }
     - { key: "友链", link: "/links/", icon: "iconfont icon-link" }
+    - { key: "关于", link: "https://www.zengjunyin.com", icon: "iconfont icon-user" }
 
 footer:
   content: '
