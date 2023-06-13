@@ -84,15 +84,15 @@ lazyload:
   loading_img: https://article.biliimg.com/bfs/article/b7bb2a197ce8caa47bcea068be3794372972d455.gif@800w_400h_1c.webp
   onlypost: true
 
-iconfont: //at.alicdn.com/t/c/font_3048099_c8qyj3uwdpd.css
+iconfont: //at.alicdn.com/t/c/font_3048099_lftpn34t79.css
 
 navbar:
   menu:
     - { key: "归档", link: "/archives/", icon: "iconfont icon-archive" }
     - { key: "分类", link: "/categories/", icon: "iconfont icon-category" }
-    - { key: "说说", link: "/daily/", icon: "iconfont icon-love" }
+    - { key: "说说", link: "/daily/", icon: "iconfont icon-daily" }
     - { key: "友链", link: "/links/", icon: "iconfont icon-link" }
-    - { key: "关于", link: "https://www.zengjunyin.com", icon: "iconfont icon-user" }
+    - { key: "关于", link: "https://www.zengjunyin.com", icon: "iconfont icon-about" }
 
 footer:
   content: '
@@ -137,17 +137,6 @@ twikoo:
   envId: https://twikoo.zengjunyin.com
   path: window.location.pathname
 
-about:
-  title: "关于"
-  subtitle: "可有可无的自白墙"
-  avatar: https://cdn.zengjunyin.com/avatar.png
-  name: "胤"
-  intro: "所念皆星河"
-  icons:
-    - { class: "iconfont icon-HTML-fill", link: "https://www.zengjunyin.com", tip: "Home" }
-    - { class: "iconfont icon-github-fill", link: "https://github.com/GinMiraing", tip: "GitHub" }
-    - { class: "iconfont icon-mail_fill", link: "mailto:zengjunyin@foxmail.com", tip: "Mail" }
-
 links:
   title: "友情链接"
   subtitle: "一些可爱的朋友们"
@@ -156,7 +145,7 @@ links:
       title: "山川行貉",
       intro: "快让我在雪地上撒点儿野.",
       link: "https://blog.scxho.cn",
-      avatar: "https://scxho.cn/1.png"
+      avatar: "https://article.biliimg.com/bfs/article/f029053d1b895afb1784b7aef5c745526faa696e.png@.webp"
     }
     - {
       title: "Vian",

@@ -14,26 +14,27 @@ Fluid.boot.registerPlugins = function() {
 };
 
 Fluid.boot.registerThemeButton = function() {
-  const theme_button = document.querySelector('#color-toggle-btn');
-  if (theme_button) {
-    theme_button.addEventListener('click', function() {
+  const theme_button_1 = document.querySelector('#color-toggle-btn');
+  if (theme_button_1) {
+    theme_button_1.addEventListener('click', function() {
       applyCustomColorSchemaSettings(toggleCustomColorSchema());
     });
-    const icon_button = document.querySelector('#color-toggle-icon');
-    if (icon_button) {
-      theme_button.addEventListener('mouseenter', function() {
-        var current = icon_button.getAttribute('data');
-        icon_button.classList.replace(getIconClass(invertColorSchemaObj[current]), getIconClass(current));
-      });
-      theme_button.addEventListener('mouseleave', function() {
-        var current = icon_button.getAttribute('data');
-        icon_button.classList.replace(getIconClass(current), getIconClass(invertColorSchemaObj[current]));
-      });
-    };
   };
-  const back2top_button = document.querySelector('#scroll-top-button');
-  if (back2top_button) {
-    back2top_button.addEventListener('click', function() {
+  const back2top_button_1 = document.querySelector('#scroll-top-button');
+  if (back2top_button_1) {
+    back2top_button_1.addEventListener('click', function() {
+      document.body.scrollTop = 0;
+    });
+  };
+  const theme_button_2 = document.querySelector('#navbar-theme-btn');
+  if (theme_button_2) {
+    theme_button_2.addEventListener('click', function() {
+      applyCustomColorSchemaSettings(toggleCustomColorSchema());
+    });
+  };
+  const back2top_button_2 = document.querySelector('#navbar-top-button');
+  if (back2top_button_2) {
+    back2top_button_2.addEventListener('click', function() {
       document.body.scrollTop = 0;
     });
   };
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('pjax:complete', function() {
   Fluid.boot.registerEvents();
   Fluid.boot.registerPlugins();
-  // Fluid.boot.registerThemeButton();
+  Fluid.boot.registerThemeButton();
   console.log('pjax complete');
 });
 

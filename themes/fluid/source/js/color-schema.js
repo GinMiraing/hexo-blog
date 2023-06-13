@@ -42,37 +42,6 @@ function getIconClass(scheme) {
   return 'icon-' + scheme;
 }
 
-function setButtonIcon(schema) {
-  if (validColorSchemaKeys[schema]) {
-    var icon = getIconClass(schema);
-    var iconElement = document.querySelector('#color-toggle-icon');
-    if (iconElement) {
-      iconElement.setAttribute(
-        'class',
-        'iconfont ' + icon
-      );
-      iconElement.setAttribute(
-        'data',
-        invertColorSchemaObj[schema]
-      );
-    } else {
-      Fluid.utils.waitElementLoaded('#color-toggle-icon', function() {
-        var iconElement = document.querySelector('#color-toggle-icon');
-        if (iconElement) {
-          iconElement.setAttribute(
-            'class',
-            'iconfont ' + icon
-          );
-          iconElement.setAttribute(
-            'data',
-            invertColorSchemaObj[schema]
-          );
-        }
-      });
-    }
-  }
-}
-
 function applyCustomColorSchemaSettings(schema) {
   var current = schema || getLS(colorSchemaStorageKey) || getDefaultColorSchema();
 
@@ -81,8 +50,6 @@ function applyCustomColorSchemaSettings(schema) {
   } else {
       resetRootDarkModeAttributeAndLS();
   }
-
-  setButtonIcon(current);
 }
 
 function toggleCustomColorSchema() {
@@ -96,7 +63,6 @@ function toggleCustomColorSchema() {
     return;
   }
   setLS(colorSchemaStorageKey, currentSetting);
-  setButtonIcon(currentSetting);
 
   return currentSetting;
 }

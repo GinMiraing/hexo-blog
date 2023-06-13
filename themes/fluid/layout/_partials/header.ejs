@@ -4,9 +4,17 @@
       <a class="navbar-brand" href="<%= url_for() %>">
         <strong><%= config.title %></strong>
       </a>
-      <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon"><span></span><span></span><span></span></div>
-      </button>
+      <div class="navbar-icons">
+        <a class="navbar-icon" id="navbar-theme-btn" aria-label="Navbar Color Toggle" href="javascript:;" role="button">
+          <i class="iconfont icon-theme"></i>
+        </a>
+        <a class="navbar-icon" id="navbar-top-button" aria-label="Navbar TOP" href="#" role="button">
+          <i class="iconfont icon-top" aria-hidden="true"></i>
+        </a>
+        <a class="navbar-icon" id="navbar-toggler-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="iconfont icon-list" aria-hidden="true"></i>
+        </a>
+      </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto text-center">
           <% for(const each of theme.navbar.menu || []) { %>

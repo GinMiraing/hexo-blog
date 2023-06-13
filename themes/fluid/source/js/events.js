@@ -12,7 +12,6 @@ Fluid.events = {
       return;
     };
     jQuery('#navbar-toggler-btn').on('click', function() {
-      jQuery('.animated-icon').toggleClass('open');
       jQuery('#navbar').toggleClass('navbar-col-show');
     });
   },
