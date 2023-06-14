@@ -5,14 +5,14 @@
         <strong><%= config.title %></strong>
       </a>
       <div class="navbar-icons">
-        <a class="navbar-icon" id="navbar-theme-btn" aria-label="Navbar Color Toggle" href="javascript:;" role="button">
+        <a class="navbar-icon" href="javascript:;" role="button" onclick="applyCustomColorSchemaSettings(toggleCustomColorSchema())">
           <i class="iconfont icon-theme"></i>
         </a>
-        <a class="navbar-icon" id="navbar-top-button" aria-label="Navbar TOP" href="#" role="button">
-          <i class="iconfont icon-top" aria-hidden="true"></i>
+        <a class="navbar-icon scroll-top-button" href="#" role="button">
+          <i class="iconfont icon-top"></i>
         </a>
         <a class="navbar-icon" id="navbar-toggler-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="iconfont icon-list" aria-hidden="true"></i>
+          <i class="iconfont icon-list"></i>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,9 +29,6 @@
                 <%- text %>
               </a>
             </li>
-          <% } %>
-          <% if(theme.dark_mode && theme.dark_mode.enable) { %>
-            
           <% } %>
         </ul>
       </div>

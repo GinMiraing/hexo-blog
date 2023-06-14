@@ -6,6 +6,10 @@
     }
 }
 
+.index-excerpt > div {
+    text-align: justify;
+}
+
 /* 段落 */
 .markdown-body p {
     text-align: justify;

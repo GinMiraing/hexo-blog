@@ -49,11 +49,10 @@ Fluid.plugins = {
     jQuery.fancybox.defaults.hash = false;
     jQuery('.fancybox').fancybox({
       loop: true,
-      helpers: {
-        overlay: {
-          locked: false
-        }
-      }
+      infobar: false,
+      buttons: [
+        'close'
+      ],
     });
   },
 

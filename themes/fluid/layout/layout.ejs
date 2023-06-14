@@ -32,14 +32,12 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
       <% } %>
     </div>
     <div class="side-button">
-      <a class="side-button-content" id="color-toggle-btn" aria-label="Color Toggle" href="javascript:;" role="button">
+      <a class="side-button-content" href="javascript:;" role="button" onclick="applyCustomColorSchemaSettings(toggleCustomColorSchema())">
           <i class="iconfont icon-theme"></i>
       </a>
-      <% if (theme.scroll_top_arrow.enable) { %>
-        <a class="side-button-content" id="scroll-top-button" aria-label="TOP" href="#" role="button">
-          <i class="iconfont icon-top" aria-hidden="true"></i>
-        </a>
-      <% } %>
+      <a class="side-button-content scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-top"></i>
+      </a>
     </div>
 
     <% if (theme.custom_html) { %>

@@ -1,7 +1,6 @@
 <div class="post-metas my-3">
   <% if (page.categories && page.categories.length > 0) { %>
     <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
       <%- partial('_partials/category-chains', { categories: page.categories }) %>
     </div>
   <% } %>
