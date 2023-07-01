@@ -10,7 +10,7 @@ Fluid.boot.registerPlugins = function() {
   Fluid.plugins.imageCaption();
   Fluid.plugins.twikooOn();
   Fluid.plugins.lazyloadImage();
-  Fluid.plugins.anchors();
+  //Fluid.plugins.anchors();
 };
 
 document.addEventListener('DOMContentLoaded', function() {

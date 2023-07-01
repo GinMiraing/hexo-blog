@@ -100,21 +100,15 @@ Fluid.plugins = {
   },
 
   anchors: function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible: CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    let titlecount = document.querySelectorAll('.markdown-body h2')
+    for (let i = 0; i < titlecount.length; i++) {
+      let obj = titlecount[i]
+      let wordcount = obj.innerHTML.length * 1.5
+      let widthset = wordcount.toString() + 'rem'
+      let ele = document.createElement('div')
+      ele.className = 'titleline'
+      ele.style.width = widthset
+      obj.appendChild(ele)
     }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
   }
 };

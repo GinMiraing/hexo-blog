@@ -1,15 +1,6 @@
 <%
 page.layout = "category"
 page.title = page.category
-if (page.category === "碎碎念") {
-    page.subtitle = "生活中的那些琐事"
-}
-if (page.category === "浮生记") {
-    page.subtitle = "平凡但精彩的人生"
-}
-if (page.category === "哲与思") {
-    page.subtitle = "一些无体系的思索"
-}
 var cat = site.categories.find({name: page.category}).filter(cat => cat.length).data[0]
 %>
 
